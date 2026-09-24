@@ -147,75 +147,40 @@ const PROJECTS_DATA = [
     }
   },
   {
-    id: "sistema-nexus-front",
-    title: "Sistema Nexus - Enterprise Frontend",
-    subtitle: "Suite Frontend Moderna para ERP Empresarial, RBAC, WMS y Libros Fiscales",
+    id: "sistema-nexus",
+    title: "Sistema Nexus - Full Stack ERP Suite",
+    subtitle: "Plataforma ERP Empresarial: Frontend React 19 + Backend Asíncrono Python",
     category: "enterprise",
     categoryLabel: "🏢 Enterprise & ERP",
-    badge: "React 19 & TypeScript",
-    badgeType: "tech",
-    visibility: "Público",
-    stars: 1,
-    featured: false,
+    badge: "Full Stack Suite",
+    badgeType: "production",
+    visibility: "Público (Front & Back)",
+    stars: 2,
+    featured: true,
     accentColor: "#06b6d4",
-    gradient: "linear-gradient(135deg, rgba(6, 182, 212, 0.25) 0%, rgba(14, 116, 144, 0.05) 100%)",
-    icon: "fa-chart-pie",
-    shortDesc: "Interfaz de usuario de nivel corporativo desarrollada en React 19 y TypeScript, con gestión de estado global mediante Zustand, TanStack Query y visualización de datos con Recharts.",
-    summary: "El cliente frontend desacoplado de Sistema Nexus, enfocado en flujos de trabajo de alta densidad: libros contables y fiscales, conciliación bancaria inteligente, WMS (Warehouse Management System) y permisos basados en roles (RBAC).",
+    gradient: "linear-gradient(135deg, rgba(6, 182, 212, 0.3) 0%, rgba(99, 102, 241, 0.1) 100%)",
+    glowColor: "rgba(6, 182, 212, 0.4)",
+    icon: "fa-network-wired",
+    shortDesc: "Suite corporativa ERP desacoplada de alto rendimiento. Combina una SPA moderna en React 19 y TypeScript con un backend asíncrono en Python (FastAPI/asyncpg), PostgreSQL y matriz RBAC.",
+    summary: "Arquitectura integral cliente-servidor para la gestión empresarial de punta a punta. Incluye módulos para libros contables y fiscales, conciliación bancaria inteligente, sistema WMS de almacenamiento y control estricto de accesos por roles.",
     highlights: [
-      "Construido sobre React 19 y TypeScript con tipado estricto de punta a punta.",
-      "Gestión de estado reactivo y caché asíncrono con Zustand y @tanstack/react-query v5.",
-      "Validación de esquemas en tiempo real con Zod y React Hook Form.",
-      "Cuadros de mando analíticos con Recharts y tablas de datos avanzadas con MUI DataGrid.",
-      "Soporte multi-idioma (i18n) e integración con generador de códigos QR dinámicos."
+      "Frontend desacoplado en React 19, TypeScript, TanStack Query v5, Zustand, Zod y MUI DataGrid.",
+      "Backend asíncrono no bloqueante en Python con FastAPI y driver asyncpg con soporte nativo SSL.",
+      "Seguridad de nivel corporativo con tokens JWT, hashing seguro bcrypt y control de acceso RBAC.",
+      "Cuadros de mando analíticos con Recharts, soporte multi-idioma con i18next y transacciones ACID."
     ],
-    techStack: ["React 19", "TypeScript", "Vite 8", "Zustand", "TanStack Query", "MUI DataGrid", "Recharts", "Zod", "i18next"],
+    techStack: ["React 19", "TypeScript", "Python", "FastAPI", "PostgreSQL", "Asyncpg", "Zustand", "TanStack Query", "MUI DataGrid", "Recharts", "Zod", "Docker"],
     metrics: [
-      { label: "Versión React", value: "React 19" },
-      { label: "Manejo Estado", value: "Zustand + React Query" },
-      { label: "Validación", value: "Zod Schema" },
-      { label: "UI Kit", value: "Material UI 9" }
+      { label: "Arquitectura", value: "Full Stack Decoupled" },
+      { label: "Frontend", value: "React 19 / TS" },
+      { label: "Backend", value: "Python / Asyncpg" },
+      { label: "Seguridad", value: "JWT + RBAC" }
     ],
-    challenge: "Las interfaces de software administrativo tradicional son lentas, difíciles de mantener y no ofrecen feedback inmediato ante errores en formularios complejos o conciliaciones masivas.",
-    solution: "Se estructuró una arquitectura modular de componentes desacoplados con validación instantánea de formularios mediante esquemas Zod, caché optimista y paneles analíticos que reaccionan sin recarga.",
+    challenge: "Los sistemas administrativos tradicionales sufren de bloqueos en transacciones concurrentes de almacén y contabilidad, sumados a interfaces lentas y poco intuitivas.",
+    solution: "Implementación de una arquitectura desacoplada: interfaz ultra reactiva con caché optimista en React 19 conectada a un pool asíncrono en Python con PostgreSQL capaz de soportar alta concurrencia.",
     links: {
       github: "https://github.com/infagrasolution-afk/Sistema-Nexus-front",
-      demo: null
-    }
-  },
-  {
-    id: "sistema-nexus-back",
-    title: "Sistema Nexus - Backend API",
-    subtitle: "API REST de Alto Rendimiento para ERP con Conexión Asíncrona PostgreSQL",
-    category: "enterprise",
-    categoryLabel: "🏢 Enterprise & ERP",
-    badge: "Python & Asyncpg",
-    badgeType: "tech",
-    visibility: "Público",
-    stars: 1,
-    featured: false,
-    accentColor: "#6366f1",
-    gradient: "linear-gradient(135deg, rgba(99, 102, 241, 0.25) 0%, rgba(67, 56, 202, 0.05) 100%)",
-    icon: "fa-server",
-    shortDesc: "Backend desacoplado para la suite Sistema Nexus, con transacciones ACID, conexión nativa asyncpg con soporte SSL y motor de seguridad RBAC.",
-    summary: "Cerebro del ERP empresarial que expone endpoints RESTful protegidos por JWT, orquestando lógica de negocio fiscal, stock multialmacén y transacciones financieras concurrentes.",
-    highlights: [
-      "Motor asíncrono Python con driver `asyncpg` para máxima velocidad de consulta en PostgreSQL.",
-      "Manejo de transacciones ACID y esquemas de base de datos relacionales normalizados.",
-      "Control de acceso basado en roles (RBAC) con tokens seguros JWT y hashing bcrypt.",
-      "Diseño modular preparado para despliegues en contenedores y balanceo de carga."
-    ],
-    techStack: ["Python", "FastAPI", "PostgreSQL", "Asyncpg", "SQLAlchemy", "JWT", "Bcrypt"],
-    metrics: [
-      { label: "Driver DB", value: "Asyncpg SSL" },
-      { label: "Seguridad", value: "JWT + RBAC" },
-      { label: "Arquitectura", value: "Micro-Monolito" },
-      { label: "Estilo API", value: "RESTful OpenAPI" }
-    ],
-    challenge: "Procesar transacciones simultáneas de inventario y facturación sin bloqueos de base de datos y garantizando total consistencia en las conciliaciones bancarias.",
-    solution: "Se adoptó una arquitectura asíncrona no bloqueante con pool de conexiones gestionado en `asyncpg`, aislando transacciones críticas con niveles de aislamiento adecuados.",
-    links: {
-      github: "https://github.com/infagrasolution-afk/SIstema-Nexus-Back",
+      githubBack: "https://github.com/infagrasolution-afk/SIstema-Nexus-Back",
       demo: null
     }
   },

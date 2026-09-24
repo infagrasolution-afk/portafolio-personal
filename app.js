@@ -83,6 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderProjects() {
     if (!projectsGrid) return;
 
+    const allBtn = document.querySelector('.filter-btn[data-category="all"]');
+    if (allBtn) allBtn.innerHTML = `Todos <span style="opacity: 0.7; font-size: 0.8rem;">(${PROJECTS_DATA.length})</span>`;
+
     const filtered = PROJECTS_DATA.filter((proj) => {
       const matchCat = currentCategory === "all" || proj.category === currentCategory;
       const q = searchQuery.toLowerCase().trim();
@@ -151,13 +154,20 @@ document.addEventListener("DOMContentLoaded", () => {
                     : ""
                 }
                 ${
-                  hasGithub
-                    ? `<a href="${proj.links.github}" target="_blank" rel="noopener noreferrer" class="card-link-btn" onclick="event.stopPropagation();">
-                        <i class="fa-brands fa-github"></i> Código
+                  proj.links.githubBack
+                    ? `<a href="${proj.links.github}" target="_blank" rel="noopener noreferrer" class="card-link-btn" onclick="event.stopPropagation();" title="Repositorio Frontend">
+                        <i class="fa-brands fa-github"></i> Front
+                      </a>
+                      <a href="${proj.links.githubBack}" target="_blank" rel="noopener noreferrer" class="card-link-btn" onclick="event.stopPropagation();" title="Repositorio Backend">
+                        <i class="fa-brands fa-github"></i> Back
                       </a>`
-                    : `<span class="card-link-btn" style="opacity: 0.6; cursor: default;" onclick="event.stopPropagation();">
-                        <i class="fa-solid fa-lock"></i> Privado
-                      </span>`
+                    : (hasGithub
+                        ? `<a href="${proj.links.github}" target="_blank" rel="noopener noreferrer" class="card-link-btn" onclick="event.stopPropagation();">
+                            <i class="fa-brands fa-github"></i> Código
+                          </a>`
+                        : `<span class="card-link-btn" style="opacity: 0.6; cursor: default;" onclick="event.stopPropagation();">
+                            <i class="fa-solid fa-lock"></i> Privado
+                          </span>`)
                 }
               </div>
 
@@ -305,13 +315,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <div class="modal-footer">
         ${
-          hasGithub
-            ? `<a href="${proj.links.github}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 10px 20px;">
-                <i class="fa-brands fa-github"></i> Ver Código en GitHub
+          proj.links.githubBack
+            ? `<a href="${proj.links.github}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 10px 16px;">
+                <i class="fa-brands fa-github"></i> Repo Frontend (React 19)
+              </a>
+              <a href="${proj.links.githubBack}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 10px 16px;">
+                <i class="fa-brands fa-github"></i> Repo Backend (Python)
               </a>`
-            : `<span class="btn-secondary" style="opacity: 0.6; cursor: default; padding: 10px 20px;">
-                <i class="fa-solid fa-lock"></i> Código Protegido (Privado)
-              </span>`
+            : (hasGithub
+                ? `<a href="${proj.links.github}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 10px 20px;">
+                    <i class="fa-brands fa-github"></i> Ver Código en GitHub
+                  </a>`
+                : `<span class="btn-secondary" style="opacity: 0.6; cursor: default; padding: 10px 20px;">
+                    <i class="fa-solid fa-lock"></i> Código Protegido (Privado)
+                  </span>`)
         }
         ${
           hasLiveDemo
