@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Infante | Infagra Solution - Full Stack Engineer & AI Specialist</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portafolio oficial de Luis Infante (Infagra Solution). Especialista Full Stack & Soluciones de Inteligencia Artificial (FastAPI, React 19, Google Gemini, PostgreSQL, Docker).">
+  <meta name="keywords" content="Luis Infante, Infagra Solution, Full Stack Developer, Python, FastAPI, React 19, Google Gemini, Docker, Portafolio">
+  <meta name="author" content="Luis Infante - Infagra Solution">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Luis Infante | Infagra Solution - Portafolio de Élite">
+  <meta property="og:description" content="Explora los 8 proyectos y sistemas de ingeniería de software desarrollados por Luis Infante: Soluciones de IA con Gemini, ERPs Empresariales, y más.">
+  <meta property="og:url" content="https://github.com/infagrasolution-afk">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Luminous Background Orbs -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Glass Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-link">
+        <div class="brand-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <span>Luis Infante <span style="font-weight: 400; color: var(--text-muted); font-size: 0.95rem;">/ Infagra</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="#hero" class="active">Inicio</a></li>
+          <li class="nav-item"><a href="#projects">Proyectos (8)</a></li>
+          <li class="nav-item"><a href="#skills">Habilidades</a></li>
+          <li class="nav-item"><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="sound-toggle-btn" id="sound-toggle-btn" title="Alternar Sonido UI" aria-label="Toggle UI Audio">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <a href="#contact" class="cta-btn-nav">
+          <i class="fa-regular fa-paper-plane"></i> Contactar
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <!-- Live Status Pill -->
+        <div class="hero-pill">
+          <span class="status-dot"></span>
+          <span>Disponible para proyectos y consultoría de ingeniería</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="hero-title">
+          <span class="name-highlight">Luis Infante</span><br>
+          <span class="gradient-text">Full Stack & Soluciones de IA</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="hero-description">
+          Arquitectura de sistemas robustos, microservicios asíncronos y experiencias web de vanguardia. Creador de aplicaciones integradas con <strong>Google Gemini AI</strong>, plataformas ERP de misión crítica e infraestructura automatizada.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn-primary">
+            <i class="fa-solid fa-layer-group"></i> Explorar los 8 Proyectos
+          </a>
+          <a href="https://github.com/infagrasolution-afk" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <i class="fa-brands fa-github"></i> GitHub Profile
+          </a>
+        </div>
+
+        <!-- Metric Counter Strip -->
+        <div class="stats-strip">
+          <div class="stat-item">
+            <div class="stat-value">8</div>
+            <div class="stat-label">Proyectos Catalogados</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Demos en Producción</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Full Stack & Cloud</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">4+</div>
+            <div class="stat-label">Años de Desarrollo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Showcase Section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">#SHOWCASE DE INGENIERÍA</span>
+          <h2 class="section-title">Catálogo Completo de Proyectos</h2>
+          <p class="section-subtitle">
+            Cada solución refleja patrones de diseño limpios, alto rendimiento y arquitecturas modernas preparadas para escala.
+          </p>
+        </div>
+
+        <!-- Controls: Filters + Live Search -->
+        <div class="projects-controls">
+          <div class="filter-group">
+            <button class="filter-btn active" data-category="all">
+              Todos <span style="opacity: 0.7; font-size: 0.8rem;">(8)</span>
+            </button>
+            <button class="filter-btn" data-category="ai">
+              🤖 IA & Innovación
+            </button>
+            <button class="filter-btn" data-category="enterprise">
+              🏢 Enterprise & ERP
+            </button>
+            <button class="filter-btn" data-category="edtech">
+              ⚡ EdTech & Herramientas
+            </button>
+            <button class="filter-btn" data-category="game">
+              🎮 Game Engine
+            </button>
+            <button class="filter-btn" data-category="mobile">
+              📱 Comunitaria
+            </button>
+          </div>
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="search-input" placeholder="Buscar proyecto o tecnología... (Ctrl+K)" aria-label="Buscar proyectos">
+          </div>
+        </div>
+
+        <!-- Grid of Project Cards -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix & Radar Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">#STACK Y ESPECIALIDAD</span>
+          <h2 class="section-title">Dominio Técnico & Arquitectura</h2>
+          <p class="section-subtitle">
+            Tecnologías y herramientas aplicadas en producción para resolver desafíos del mundo real.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-title-group">
+                <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="skill-name">Google Gemini AI & LLMs</div>
+              </div>
+              <div class="skill-percentage">94%</div>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 94%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-title-group">
+                <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="skill-name">FastAPI & Python Async</div>
+              </div>
+              <div class="skill-percentage">96%</div>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 96%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-title-group">
+                <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+                <div class="skill-name">React 19 & TypeScript</div>
+              </div>
+              <div class="skill-percentage">92%</div>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-title-group">
+                <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="skill-name">PostgreSQL & Asyncpg</div>
+              </div>
+              <div class="skill-percentage">90%</div>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-title-group">
+                <div class="skill-icon"><i class="fa-brands fa-docker"></i></div>
+                <div class="skill-name">Docker & IaC (Render/Vercel)</div>
+              </div>
+              <div class="skill-percentage">88%</div>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-title-group">
+                <div class="skill-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="skill-name">PWA & Arquitectura Móvil</div>
+              </div>
+              <div class="skill-percentage">92%</div>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Direct Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <span class="section-tag">#INICIEMOS CONVERSACIÓN</span>
+          <h2 class="section-title" style="margin-bottom: 12px;">¿Tienes un reto o proyecto en mente?</h2>
+          <p class="section-subtitle">
+            Hablemos sobre cómo llevar tu idea o empresa al siguiente nivel con software confiable e Inteligencia Artificial.
+          </p>
+
+          <div class="contact-channels">
+            <!-- Email Item with 1-click copy -->
+            <button class="contact-channel-item" id="copy-email-btn" style="cursor: pointer; text-align: center; border: none; font-family: inherit;">
+              <div class="channel-icon icon-email">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="channel-title">Correo Electrónico</div>
+              <div class="channel-detail">infagrasolution@gmail.com</div>
+              <span style="font-size: 0.78rem; color: var(--accent-cyan); font-weight: 600;">
+                <i class="fa-regular fa-copy"></i> Clic para copiar
+              </span>
+            </button>
+
+            <!-- GitHub Item -->
+            <a href="https://github.com/infagrasolution-afk" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon icon-github">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="channel-title">GitHub</div>
+              <div class="channel-detail">@infagrasolution-afk</div>
+              <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">
+                Ver repositorios & commits <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
+            </a>
+
+            <!-- WhatsApp Item -->
+            <a href="https://wa.me/584120161906?text=Hola%20Luis,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20un%20proyecto" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
+              <div class="channel-icon icon-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="channel-title">WhatsApp</div>
+              <div class="channel-detail">+58 412 0161906</div>
+              <span style="font-size: 0.78rem; color: #34d399; font-weight: 600;">
+                Iniciar conversación <i class="fa-solid fa-paper-plane"></i>
+              </span>
+            </a>
+          </div>
+
+          <div style="margin-top: 20px;">
+            <button type="button" id="open-contact-modal-btn" class="btn-primary" style="padding: 16px 36px; cursor: pointer; border: none; font-size: 1rem;">
+              <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje Directo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Case Study Modal -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-container" id="modal-container">
+      <!-- Populated dynamically by app.js -->
+    </div>
+  </div>
+
+  <!-- Interactive Direct Contact Modal -->
+  <div class="modal-overlay" id="contact-modal" aria-hidden="true" role="dialog">
+    <div class="modal-container" style="max-width: 620px;">
+      <button class="modal-close-btn" id="contact-modal-close" title="Cerrar (Esc)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-banner" style="background: linear-gradient(135deg, rgba(0, 242, 254, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);">
+        <div class="modal-badge-row">
+          <span class="card-badge badge-production">
+            <span class="status-dot"></span> Envío Directo e Inmediato
+          </span>
+        </div>
+        <h2 class="modal-title" style="font-size: 1.6rem;">Enviar Mensaje a Luis Infante</h2>
+        <p class="modal-subtitle" style="font-size: 0.95rem;">Elige si prefieres enviarlo directamente a WhatsApp o abrirlo en tu Gmail.</p>
+      </div>
+
+      <div class="modal-body" style="padding: 30px 36px;">
+        <form id="direct-contact-form" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label class="form-label" for="contact-name"><i class="fa-regular fa-user"></i> Tu Nombre o Empresa</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="Ej. Carlos Mendoza / TechCorp" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-info"><i class="fa-regular fa-envelope"></i> Tu Correo o Teléfono de Contacto</label>
+            <input type="text" id="contact-info" class="form-input" placeholder="Ej. carlos@empresa.com o +58 414..." required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"><i class="fa-solid fa-layer-group"></i> Tipo de Proyecto</label>
+            <div class="project-type-pills" id="project-type-pills">
+              <button type="button" class="type-pill active" data-type="Solución con IA">🤖 Solución con IA</button>
+              <button type="button" class="type-pill" data-type="Sistema ERP / Gestión">🏢 Sistema ERP</button>
+              <button type="button" class="type-pill" data-type="Desarrollo Web / Mobile">⚡ Web / Mobile</button>
+              <button type="button" class="type-pill" data-type="Consultoría / Contratación">💼 Consultoría</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-message"><i class="fa-regular fa-comment-dots"></i> ¿En qué podemos ayudarte?</label>
+            <textarea id="contact-message" class="form-textarea" rows="3" placeholder="Cuéntanos brevemente qué necesitas construir o resolver..." required></textarea>
+          </div>
+
+          <!-- Dual Send Options -->
+          <div class="dual-send-actions">
+            <button type="button" id="send-whatsapp-btn" class="send-btn btn-send-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Enviar a WhatsApp
+            </button>
+            <button type="button" id="send-gmail-btn" class="send-btn btn-send-gmail">
+              <i class="fa-brands fa-google"></i> Abrir en Gmail Web
+            </button>
+          </div>
+          <div style="text-align: center; margin-top: 14px;">
+            <a href="#" id="send-mailto-link" style="color: var(--text-sub); font-size: 0.8rem; text-decoration: underline;">
+              O abrir en gestor de correo predeterminado (Outlook / Mail)
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toast-notice">
+    <i class="fa-solid fa-circle-check" style="color: var(--accent-cyan);"></i>
+    <span id="toast-text">Notificación</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>Luis Infante</strong> (Infagra Solution) · Diseñado para superar los estándares de la industria.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="projects-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

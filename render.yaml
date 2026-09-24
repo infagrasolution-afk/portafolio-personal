@@ -1,0 +1,23 @@
+# =============================================================================
+# RENDER BLUEPRINT - PORTAFOLIO LUIS INFANTE (INFAGRA SOLUTION)
+# =============================================================================
+
+services:
+  # Sitio Estático de Alto Rendimiento (100% Gratuito en CDN global sin suspensión)
+  - type: web
+    name: portafolio-luis-infante
+    env: static
+    plan: free
+    buildCommand: ""
+    staticPublishPath: "./"
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

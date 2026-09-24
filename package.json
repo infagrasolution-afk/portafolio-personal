@@ -1,0 +1,21 @@
+{
+  "name": "portafolio-luis-infante",
+  "version": "1.0.0",
+  "description": "Portafolio oficial de Luis Infante (Infagra Solution) - Full Stack Engineer & AI Specialist",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "luis-infante",
+    "full-stack",
+    "ai",
+    "fastapi",
+    "react",
+    "gemini"
+  ],
+  "author": "Luis Infante <infagrasolution@gmail.com>",
+  "license": "MIT"
+}
