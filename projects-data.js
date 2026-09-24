@@ -220,38 +220,39 @@ const PROJECTS_DATA = [
     }
   },
   {
-    id: "mario-bros-engine",
-    title: "Super Mario Bros Web Game",
-    subtitle: "Motor Web de Videojuego Full Stack con React 19, TypeScript y Backend de Rankings",
-    category: "game",
-    categoryLabel: "🎮 Game Engine & Interactivo",
-    badge: "Full Stack Game",
+    id: "experiencia-qr",
+    title: "Experiencia Interactiva QR",
+    subtitle: "Aplicación Web Interactiva con React 19, Framer Motion y Generación de QR en Python",
+    category: "interactive",
+    categoryLabel: "✨ UI/UX & Experiencias",
+    badge: "React 19 & Framer Motion",
     badgeType: "tech",
-    visibility: "Privado / Local",
+    visibility: "Público",
     stars: 0,
     featured: false,
-    accentColor: "#ef4444",
-    gradient: "linear-gradient(135deg, rgba(239, 68, 68, 0.25) 0%, rgba(185, 28, 28, 0.05) 100%)",
-    icon: "fa-gamepad",
-    shortDesc: "Recreación interactiva de mecánicas de juego en canvas con React 19 y Vite 8, acompañada de un backend FastAPI para sincronización de niveles y puntuaciones récord.",
-    summary: "Proyecto técnico que demuestra dominio en lógica de física 2D en JavaScript/TypeScript (colisiones, inercia, gravedad) y sincronización asíncrona de estado con servidor en FastAPI.",
+    accentColor: "#ec4899",
+    gradient: "linear-gradient(135deg, rgba(236, 72, 153, 0.3) 0%, rgba(190, 24, 93, 0.08) 100%)",
+    glowColor: "rgba(236, 72, 153, 0.4)",
+    icon: "fa-wand-magic-sparkles",
+    shortDesc: "Experiencia web inmersiva con animaciones de alta fluidez en Framer Motion, componentes Material UI v9 y scripts de soporte en Python para generación de códigos QR visuales.",
+    summary: "Proyecto frontend interactivo enfocado en diseño emocional y microinteracciones de alta fidelidad. Combina React 19, Vite 8 y Framer Motion con scripts de procesamiento en Python para renderizar códigos QR dinámicos y transiciones visuales enriquecidas.",
     highlights: [
-      "Desarrollado en React 19, TypeScript y Vite 8 con componentes MUI v9.",
-      "Implementación de loop de animación a 60 FPS con control de físicas de salto y detección de colisiones.",
-      "API backend en FastAPI para persistencia de líderes, niveles superados y métricas de partidas.",
-      "Manejo de audio y sprites interactivos con renderizado optimizado."
+      "Desarrollado sobre React 19 y Vite 8 con bundling ultrarrápido y soporte HMR.",
+      "Animaciones fluidas y transiciones reactivas mediante Framer Motion y Material UI 9.",
+      "Script de backend y automatización en Python (`generar_qr.py`) para procesamiento de códigos QR estilizados.",
+      "Pipeline de calidad con Oxlint para máxima velocidad de análisis estático."
     ],
-    techStack: ["React 19", "TypeScript", "Vite 8", "Material UI 9", "FastAPI", "Python", "HTML5 Canvas"],
+    techStack: ["React 19", "Framer Motion", "Material UI 9", "Vite 8", "Python", "Lucide React", "Oxlint"],
     metrics: [
-      { label: "Render", value: "60 FPS Canvas" },
-      { label: "Físicas", value: "Gravedad & AABB" },
-      { label: "API Scores", value: "FastAPI REST" },
-      { label: "Tipado", value: "Strict TS" }
+      { label: "Versión React", value: "React 19" },
+      { label: "Animaciones", value: "Framer Motion" },
+      { label: "Generador QR", value: "Python Script" },
+      { label: "Build Tool", value: "Vite 8" }
     ],
-    challenge: "Garantizar una tasa constante de 60 cuadros por segundo en navegadores web mientras se gestionan eventos de entrada del teclado sin latencia y se actualizan tablas de récord en tiempo real.",
-    solution: "Separación del loop de actualización de físicas del ciclo de vida de React, usando `requestAnimationFrame` acoplado a un motor AABB de colisiones y llamadas API no bloqueantes.",
+    challenge: "Crear una experiencia web visualmente cautivadora con animaciones complejas sin degradar los 60 FPS ni saturar el rendimiento en dispositivos móviles.",
+    solution: "Aprovechamiento de transformaciones aceleradas por hardware con Framer Motion, acopladas al nuevo motor concurrente de React 19 y generación eficiente de assets en Python.",
     links: {
-      github: null,
+      github: "https://github.com/infagrasolution-afk/personal",
       demo: null
     }
   },
