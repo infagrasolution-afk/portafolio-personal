@@ -7,7 +7,6 @@ services:
   - type: web
     name: portafolio-luis-infante
     env: static
-    plan: free
     buildCommand: ""
     staticPublishPath: "./"
     headers:
