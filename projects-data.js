@@ -270,7 +270,7 @@ const PROFILE_STATS = {
   github: "https://github.com/infagrasolution-afk",
   whatsapp: "+584120161906",
   location: "Venezuela",
-  experienceYears: "4+",
+  experienceYears: "8+",
   totalProjects: 8,
   liveDemos: 2,
   coreSkills: [
