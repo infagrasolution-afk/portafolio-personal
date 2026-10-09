@@ -259,26 +259,75 @@ const PROJECTS_DATA = [
   }
 ];
 
-// Estadísticas de perfil globales
+// Estadísticas de perfil globales y datos estratégicos para reclutadores
 const PROFILE_STATS = {
   name: "Luis Infante",
   brand: "Infagra Solution",
   handle: "infagrasolution-afk",
   role: "Full Stack Engineer & AI Specialist",
-  tagline: "Transformando ideas complejas en arquitecturas escalables, sistemas empresariales y experiencias interactivas impulsadas por Inteligencia Artificial.",
+  tagline: "Arquitecto de software especializado en sistemas de misión crítica, aplicaciones reactivas en React 19 y soluciones con Inteligencia Artificial (Google Gemini).",
   email: "infagrasolution@gmail.com",
   github: "https://github.com/infagrasolution-afk",
   whatsapp: "+584120161906",
-  location: "Venezuela",
+  location: "Venezuela · Disponible Remoto Global",
+  availability: "Inmediata (Full-time / Consultoría / Contrato)",
   experienceYears: "8+",
   totalProjects: 8,
   liveDemos: 2,
+  englishLevel: "Técnico Avanzado (Lectura/Escritura Fluida de Docs & Specs)",
   coreSkills: [
-    { name: "Google Gemini AI & LLMs", level: 92, category: "ai" },
-    { name: "FastAPI & Python", level: 95, category: "backend" },
-    { name: "React 19 & TypeScript", level: 90, category: "frontend" },
-    { name: "PostgreSQL & Asyncpg", level: 88, category: "backend" },
-    { name: "Docker & Render IaC", level: 85, category: "devops" },
-    { name: "PWA & Mobile-First", level: 90, category: "frontend" }
+    { name: "Google Gemini AI & LLMs", level: 94, category: "ai" },
+    { name: "FastAPI & Python Async", level: 96, category: "backend" },
+    { name: "React 19 & TypeScript", level: 92, category: "frontend" },
+    { name: "PostgreSQL & Asyncpg", level: 90, category: "backend" },
+    { name: "Docker & IaC (Render/Vercel)", level: 88, category: "devops" },
+    { name: "PWA & Arquitectura Móvil", level: 92, category: "frontend" }
   ]
 };
+
+// Trayectoria y Experiencia Profesional (Diseñado para Reclutadores y Hiring Managers)
+const CAREER_TIMELINE = [
+  {
+    period: "2024 - Presente",
+    role: "Lead Full Stack & AI Solutions Engineer",
+    company: "Infagra Solution",
+    badge: "Actualidad",
+    badgeType: "production",
+    description: "Diseño y desarrollo integral de aplicaciones modernas de alto impacto, combinando microservicios asíncronos en Python, interfaces desacopladas en React 19 y pipelines con Google Gemini 2.5 Flash.",
+    achievements: [
+      "Desarrolló 'Zero Waste Chef', PWA impulsada por Google Gemini con inferencia contextual en < 1.2s y modo offline-ready.",
+      "Diseñó la arquitectura de 'Sistema Nexus' (ERP en React 19 + FastAPI + asyncpg + PostgreSQL con matriz de seguridad RBAC).",
+      "Implementó infraestructuras automatizadas como código (IaC con Render Blueprint y Docker) reduciendo tiempos de despliegue a minutos."
+    ],
+    tech: ["Google Gemini AI", "FastAPI", "React 19", "Python", "PostgreSQL", "Docker", "Vercel"]
+  },
+  {
+    period: "2021 - 2024",
+    role: "Senior Backend & ERP Systems Developer",
+    company: "Consultoría de Software Empresarial",
+    badge: "Sistemas & ERP",
+    badgeType: "enterprise",
+    description: "Liderazgo técnico en la digitalización de procesos institucionales y empresariales, desarrollo de sistemas de inventario y generación de documentos de seguridad.",
+    achievements: [
+      "Construyó la plataforma escolar integral con generación vectorial de carnets QR y Code128 con ReportLab y Bot de Telegram institucional.",
+      "Desarrolló 'Sistems ERP Inventario' con Kardex en tiempo real, trazabilidad de lotes y panel Super Admin multi-privilegios.",
+      "Creó la suite LNet para operaciones de campo de telecomunicaciones con auto-deducción de stock, GPS y firma digital en canvas."
+    ],
+    tech: ["Python", "FastAPI", "ReportLab", "PostgreSQL", "Node.js", "Telegram API", "SQLite WAL"]
+  },
+  {
+    period: "2018 - 2021",
+    role: "Full Stack Web Developer & UI Engineer",
+    company: "Desarrollo de Soluciones Digitales",
+    badge: "Fundacional",
+    badgeType: "open",
+    description: "Desarrollo de portales web interactivos, aplicaciones comunitarias y consumo de APIs REST con enfoque Mobile-First y altos estándares de rendimiento.",
+    achievements: [
+      "Maquetación y optimización de interfaces responsivas logrando puntuaciones Lighthouse superiores a 90 en accesibilidad y rendimiento.",
+      "Desarrollo de la aplicación para gestión de membresías y cronogramas comunitarios con arquitectura ligera y cero fricción.",
+      "Especialización en estándares modernos de JavaScript, CSS avanzado y consumo eficiente de bases de datos relacionales."
+    ],
+    tech: ["JavaScript Moderno", "HTML5 Semántico", "CSS3 / Glassmorphism", "REST APIs", "Git/GitHub"]
+  }
+];
+
